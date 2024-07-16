@@ -1,6 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped
 with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+![GitHub package.json version](https://img.shields.io/github/package-json/v/InjstedInc/next-template)
+![GitHub Release Date](https://img.shields.io/github/release-date/InjstedInc/next-template)
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Injsted/next-template/main.yaml)
+![Last Commit](https://img.shields.io/github/last-commit/InjstedInc/next-template)
+
+
 ## Project Overview
 
 This project was started from our custom Next.js template, which serves as the starter for any future Next.js projects.
@@ -20,6 +27,13 @@ This template is designed to streamline the setup process and ensure consistency
 All future projects will use this template, ensuring a consistent and efficient development environment. If you are
 working on a project that doesn't already use this template, consider migrating to benefit from the standardized
 configuration and tooling.
+
+> **Note:**
+>
+> For all cloned repositories from this template, ensure that all occurrences of the project name are updated accordingly. This includes updating the `package-name` field in the `.release-please-config.json` file, as well as any other references to the project name throughout the codebase and documentation.
+>
+> This step is crucial to ensure that the release process, versioning, and other project-specific configurations are correctly aligned with the new project's name.
+
 
 ### Getting Started with Template [Ignore if you are working on a project that already uses this template]
 
@@ -186,6 +200,36 @@ indicating what needs to be fixed.
 
 By adhering to the commit message conventions enforced by CommitLint, we ensure a clean and understandable project
 history, which benefits all contributors and maintainers.
+
+## Release Automation with Release Please
+
+This project uses Release Please to automate the process of generating changelogs and creating releases.
+
+### How It Works
+
+1. **Push Changes:** When changes are pushed to the `main` branch, Release Please creates a release pull request if
+   there are new changes.
+2. **Merge PR:** Once the release pull request is reviewed and merged, Release Please updates the version
+   in `package.json`, generates a changelog, and creates a new release on GitHub.
+
+### Usage
+
+- **Creating a Release:** Simply push your changes to the `main` branch. Release Please will handle the rest, including
+  version bumping, changelog generation, and release creation.
+- **Versioning:** The version in `package.json` is automatically updated based on the changes merged into the `main`
+  branch, following semantic versioning.
+
+### Benefits
+
+- **Automated Changelog Generation:** Ensures that changelogs are consistent and always up to date.
+- **Simplified Release Process:** Reduces manual steps for creating releases, saving time and effort.
+- **Consistency:** Maintains a standardized release process across all projects using this template.
+
+### Important Note
+
+If this template is being cloned for a new project, make sure to update the `package-name` field in
+the `.release-please-config.json` file to the new project's name. This ensures that the release process and versioning
+are correctly aligned with the new project.
 
 ## Learn More
 
