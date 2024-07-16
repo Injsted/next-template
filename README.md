@@ -138,7 +138,54 @@ that can be automatically fixed (e.g., formatting issues), they will be fixed, a
 issues that need manual intervention (e.g., linting errors), the commit will be aborted, and you will need to fix these
 issues before committing again
 
+## CommitLint
 
+This project uses CommitLint to enforce a consistent commit message format. CommitLint ensures that all commit messages
+adhere to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard, which improves
+readability and maintainability of the project's commit history.
+
+### Commit Message Format
+
+CommitLint is configured to follow the Conventional Commits standard, which uses the following format:
+
+    <type>[optional scope]: <description>
+
+**Types:**
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, etc.)
+- `refactor`: Code refactoring
+- `perf`: Performance improvements
+- `test`: Adding or updating tests
+- `build`: Changes to the build system or dependencies
+- `ci`: Changes to CI configuration
+- `chore`: Other changes that don't modify source code or tests
+- `revert`: Reverting a previous commit
+
+### Examples
+
+- `feat: add user authentication`
+- `fix: resolve login bug`
+- `docs: update README with setup instructions`
+- `style: format code with Prettier`
+- `refactor: simplify API endpoint logic`
+
+### How It Works
+
+Whenever you make a commit, Husky will automatically run CommitLint to check your commit message. If the commit message
+does not follow the Conventional Commits format, the commit will be rejected, and you will see an error message
+indicating what needs to be fixed.
+
+### Benefits
+
+- **Consistent Commit Messages:** Helps maintain a consistent commit history across the project.
+- **Improved Readability:** Makes it easier to understand the history of changes in the project.
+- **Better Automation:** Allows for easier automation of versioning and changelog generation based on commit messages.
+
+By adhering to the commit message conventions enforced by CommitLint, we ensure a clean and understandable project
+history, which benefits all contributors and maintainers.
 
 ## Learn More
 
