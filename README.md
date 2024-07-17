@@ -3,6 +3,7 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/Injsted/next-template)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Injsted/next-template)
+![GitHub License](https://img.shields.io/github/license/Injsted/next-template)
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Injsted/next-template/main.yml)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Injsted/next-template/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Injsted/next-template/tree/main)
@@ -324,3 +325,8 @@ the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=
 from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
