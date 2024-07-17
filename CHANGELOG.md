@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/Injsted/next-template/compare/v1.2.1...v1.2.2) (2024-07-17)
+
+
+### Bug Fixes
+
+* removing token input in release action ([9afbbeb](https://github.com/Injsted/next-template/commit/9afbbebd719229250f2460c05c4cd49dbd2518ff))
+
 ## [1.2.1](https://github.com/Injsted/next-template/compare/v1.2.0...v1.2.1) (2024-07-17)
 
 
