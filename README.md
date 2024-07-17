@@ -39,12 +39,19 @@ configuration and tooling.
 
 ### Getting Started with Template [Ignore if you are working on a project that already uses this template]
 
-To get started with development, clone the repository with your own project name:
+To get started with development, run the following commands:
 
 ```bash
-git clone <repository-url> <your-project-name>
+npx create-next-app@latest <your-project-name> --example 
 cd <your-project-name>
 pnpm install
+```
+
+After running these commands, you should clean the Changelog file and reset the version to `1.0.0` in the `package.json`
+by running the following command:
+
+```bash
+npx node clean-slate.js
 ```
 
 ### Key Commands
