@@ -16,11 +16,8 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
-
       - name: Install dependencies
-        run: pnpm install
+        run: npm install --legacy-peer-deps
 
       - name: Run Snyk to check for vulnerabilities
         run: npx snyk test --sarif-file-output=snyk.sarif
