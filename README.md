@@ -214,6 +214,29 @@ CommitLint is configured to follow the Conventional Commits standard, which uses
 - `style: format code with Prettier`
 - `refactor: simplify API endpoint logic`
 
+**Breaking Changes**:
+
+To indicate a breaking change, you can include `BREAKING CHANGE:` in the commit body, or use a `!` in the type or scope, and describe the change. This ensures that breaking changes are clearly communicated.
+
+**Examples of Breaking Changes**:
+
+1. Using `BREAKING CHANGE:` in the commit body:
+    ```
+    feat: update authentication flow
+
+    BREAKING CHANGE: The authentication flow has been updated to support OAuth 2.0. This change requires updating the client configuration.
+    ```
+
+2. Using `!` in the type or scope:
+    ```
+    feat!: update authentication flow to support OAuth 2.0
+    ```
+   or
+    ```
+    feat(auth)!: update authentication flow to support OAuth 2.0
+    ```
+
+
 ### How It Works
 
 Whenever you make a commit, Husky will automatically run CommitLint to check your commit message. If the commit message
