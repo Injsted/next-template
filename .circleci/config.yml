@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: circleci/node:22 # Use an appropriate Node.js version
+      - image: cimg/node:22.4.1 # Use an appropriate Node.js version
 
 jobs:
   build:
