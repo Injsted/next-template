@@ -42,7 +42,7 @@ configuration and tooling.
 To get started with development, run the following commands:
 
 ```bash
-npx create-next-app@latest <your-project-name> --example 
+npx create-next-app@latest --example https://github.com/Injsted/next-template <your-project-name> 
 cd <your-project-name>
 pnpm install
 ```
