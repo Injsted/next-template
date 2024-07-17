@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/Injsted/next-template/compare/v1.2.2...v1.2.3) (2024-07-17)
+
+
+### Bug Fixes
+
+* using newer gh release action ([d169eea](https://github.com/Injsted/next-template/commit/d169eeabaed86e8ace8a9ad842fb762aaac3a9db))
+
 ## [1.2.2](https://github.com/Injsted/next-template/compare/v1.2.1...v1.2.2) (2024-07-17)
 
 
