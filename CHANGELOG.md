@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/Injsted/next-template/compare/v1.2.3...v1.2.4) (2024-07-17)
+
+
+### Bug Fixes
+
+* using v2 and md file for gh action ([ffa3ef9](https://github.com/Injsted/next-template/commit/ffa3ef9fbf9cdc1033cc093c162f7dd263dc2beb))
+
 ## [1.2.3](https://github.com/Injsted/next-template/compare/v1.2.2...v1.2.3) (2024-07-17)
 
 
