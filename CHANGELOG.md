@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/Injsted/next-template/compare/v1.3.0...v2.0.0) (2024-07-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* enhancing script to change name all over
+
+### Code Refactoring
+
+* enhancing script to change name all over ([600ef22](https://github.com/Injsted/next-template/commit/600ef22dd73a69f82024d47eac280e502c1f23d8))
+
 ## [1.3.0](https://github.com/Injsted/next-template/compare/v1.2.5...v1.3.0) (2024-07-17)
 
 
