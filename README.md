@@ -63,6 +63,18 @@ If this is a cloned project from the original template, you can ignore the instr
 
 This project uses ESLint and Prettier to maintain code quality and consistency.
 
+## Starting Up the Project
+
+To get started with the project, run the following commands:
+
+```bash
+pnpm install
+pnpm dev
+```
+
+This will install the project dependencies and start the development server. You can then access the application at
+`http://localhost:3000`.
+
 ### ESLint
 
 ESLint is configured to extend recommended settings from ESLint, TypeScript, React, React Hooks, and Prettier. It
