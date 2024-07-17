@@ -263,6 +263,25 @@ the `main` branch. The results can be viewed in the Actions tab of the repositor
 By using these commands, you can ensure your project remains secure and up-to-date with the latest vulnerability
 patches.
 
+## Global Logger
+
+This project uses Winston as the global logging library to maintain consistent and structured logging across the
+application. The logger is configured to log messages to both console (in development) and log files (in production),
+making it easier to debug and monitor the application.
+
+### Configuration
+
+The logger is configured in `utils/logger.ts`. The configuration includes settings for:
+
+- **Logging Levels**: Logs are categorized into different levels such as `info`, `warn`, `error`, etc.
+- **Transports**: Logs are written to files (`error.log` for errors and `combined.log` for all logs) and to the console
+  in development.
+- **Format**: Logs include timestamps, error stacks, and are formatted as JSON.
+
+### Usage
+
+You can use the logger in any part of the application including API routes, server-side functions, and middleware.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
