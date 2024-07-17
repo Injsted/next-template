@@ -54,6 +54,10 @@ by running the following command:
 npx node clean-slate.js
 ```
 
+> The above script is designed to reset the project version, clear the changelog, and update the project name across
+multiple files. This ensures a consistent starting point for new projects derived from this template. Do not modify this
+script as it ensures uniform setup for all developers.
+
 You should be all set to start developing your project.
 
 ### Key Commands

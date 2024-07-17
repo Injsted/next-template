@@ -1,3 +1,10 @@
+/**
+ * WARNING: DO NOT MODIFY THIS FILE
+ * This script is used to reset the project version, clear the changelog,
+ * and update the project name across multiple files.
+ * Modifying this script can lead to inconsistent project setups.
+ */
+
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
@@ -101,6 +108,26 @@ const updateReadme = (projectName) => {
   console.log(`Updated README.md with project name ${projectName}`);
 };
 
+// Update the project name in package-lock.json
+const updatePackageLockName = (projectName) => {
+  const packageLockPath = path.join(process.cwd(), 'package-lock.json');
+  if (!fs.existsSync(packageLockPath)) {
+    console.error('Error: package-lock.json not found!');
+    process.exit(1);
+  }
+
+  const packageLockJson = JSON.parse(fs.readFileSync(packageLockPath, 'utf8'));
+  packageLockJson.name = projectName;
+
+  if (packageLockJson.packages && packageLockJson.packages[""]) {
+    packageLockJson.packages[""].name = projectName;
+  }
+
+  fs.writeFileSync(packageLockPath, JSON.stringify(packageLockJson, null, 2) + '\n');
+  console.log(`Updated project name in package-lock.json to ${projectName}`);
+};
+
+
 
 // Main function
 const main = async () => {
@@ -116,6 +143,7 @@ const main = async () => {
   updateProjectName(projectName);
   updateServiceName(projectName);
   updateReadme(projectName);
+  updatePackageLockName(projectName);
 };
 
 main();
