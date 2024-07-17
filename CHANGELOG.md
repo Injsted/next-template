@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Injsted/next-template/compare/v1.2.5...v1.3.0) (2024-07-17)
+
+
+### Features
+
+* adding script that resets version and changelog ([#13](https://github.com/Injsted/next-template/issues/13)) ([b5d4e37](https://github.com/Injsted/next-template/commit/b5d4e370767e2e363bdb5050ad6bb6af6733d911))
+
 ## [1.2.5](https://github.com/Injsted/next-template/compare/v1.2.4...v1.2.5) (2024-07-17)
 
 
