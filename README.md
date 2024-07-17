@@ -4,7 +4,7 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/InjstedInc/next-template)
 ![GitHub Release Date](https://img.shields.io/github/release-date/InjstedInc/next-template)
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/InjstedInc/next-template/main.yaml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/InjstedInc/next-template/main.yml)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/InjstedInc/next-template/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/InjstedInc/next-template/tree/main)
 ![Last Commit](https://img.shields.io/github/last-commit/InjstedInc/next-template)
 
