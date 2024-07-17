@@ -41,4 +41,3 @@ jobs:
           body: ${{ steps.release.outputs.body }}
           draft: false
           prerelease: false
-          token: ${{ secrets.ACTIONS_TOKEN }}
