@@ -34,12 +34,11 @@ jobs:
 
       - name: Create GitHub Release
         if: steps.release.outputs.release_created == 'true'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.release.outputs.tag_name }}
-          release_name: ${{ steps.release.outputs.tag_name }}
-          body: ${{ steps.release.outputs.body }}
+          body_path: ${{ github.workspace }}-CHANGELOG.md
           draft: false
           prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          make_latest: true
+          token: ${{ secrets.GITHUB_TOKEN }}
