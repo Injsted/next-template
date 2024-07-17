@@ -12,9 +12,8 @@ jobs:
       - checkout
 
       - run:
-          name: Set up pnpm
-          command: |
-            curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+          name: Install pnpm
+          command: npm install -g pnpm
 
       - run:
           name: Install dependencies
