@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/InjstedInc/next-template/compare/v1.0.1...v1.1.0) (2024-07-17)
+
+
+### Features
+
+* adding global logger ([#5](https://github.com/InjstedInc/next-template/issues/5)) ([ed1d337](https://github.com/InjstedInc/next-template/commit/ed1d3379463ee6a508f935fb9511da8ff3986646))
+
 ## [1.0.1](https://github.com/InjstedInc/next-template/compare/v1.0.0...v1.0.1) (2024-07-17)
 
 
