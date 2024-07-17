@@ -10,15 +10,25 @@ jobs:
     executor: node-executor
     steps:
       - checkout
-
+      - restore_cache:
+          name: Restore pnpm Package Cache
+          keys:
+            - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
       - run:
-          name: Install pnpm
-          command: npm install -g pnpm
-
+          name: Install pnpm package manager
+          command: |
+            corepack enable
+            corepack prepare pnpm@latest-9 --activate
+            pnpm config set store-dir .pnpm-store
       - run:
-          name: Install dependencies
-          command: pnpm install
-
+          name: Install Dependencies
+          command: |
+            pnpm install
+      - save_cache:
+          name: Save pnpm Package Cache
+          key: pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
+          paths:
+            - .pnpm-store
       - run:
           name: Build project
           command: pnpm build
