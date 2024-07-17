@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Injsted/next-template/compare/v1.1.0...v1.2.0) (2024-07-17)
+
+
+### Features
+
+* changing org name accordingly ([32ec45e](https://github.com/Injsted/next-template/commit/32ec45e1bd099194e37683176e75fd560459420b))
+
 ## [1.1.0](https://github.com/InjstedInc/next-template/compare/v1.0.1...v1.1.0) (2024-07-17)
 
 
