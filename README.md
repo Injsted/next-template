@@ -54,6 +54,8 @@ by running the following command:
 npx node clean-slate.js
 ```
 
+You should be all set to start developing your project.
+
 ### Key Commands
 
 - **Development:** `pnpm dev`

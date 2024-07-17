@@ -15,7 +15,7 @@ const execCommand = (command) => {
 // Check if there are any commits in the repository
 const checkForCommits = () => {
   const commitCount = execCommand('git rev-list --count HEAD');
-  return commitCount > 0;
+  return commitCount > 1;
 };
 
 // Reset version in package.json to 0.1.0
