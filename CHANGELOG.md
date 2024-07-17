@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/Injsted/next-template/compare/v3.0.0...v3.1.0) (2024-07-17)
+
+
+### Features
+
+* adding License ([d39b4e6](https://github.com/Injsted/next-template/commit/d39b4e6156964228497bf6af638728bcacb6658b))
+
 ## [3.0.0](https://github.com/Injsted/next-template/compare/v2.0.0...v3.0.0) (2024-07-17)
 
 
