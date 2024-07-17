@@ -30,7 +30,7 @@ jobs:
         with:
           release-type: node
           package-name: my-nextjs-webapp
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACTIONS_TOKEN }}
 
       - name: Create GitHub Release
         if: steps.release.outputs.release_created == 'true'
