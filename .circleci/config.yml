@@ -1,0 +1,31 @@
+version: 2.1
+
+executors:
+  node-executor:
+    docker:
+      - image: circleci/node:14.17 # Use an appropriate Node.js version
+
+jobs:
+  build:
+    executor: node-executor
+    steps:
+      - checkout
+
+      - run:
+          name: Set up pnpm
+          command: |
+            curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+
+      - run:
+          name: Install dependencies
+          command: pnpm install
+
+      - run:
+          name: Build project
+          command: pnpm build
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build

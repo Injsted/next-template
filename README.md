@@ -4,9 +4,9 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/InjstedInc/next-template)
 ![GitHub Release Date](https://img.shields.io/github/release-date/InjstedInc/next-template)
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Injsted/next-template/main.yaml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/InjstedInc/next-template/main.yaml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/InjstedInc/next-template/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/InjstedInc/next-template/tree/main)
 ![Last Commit](https://img.shields.io/github/last-commit/InjstedInc/next-template)
-
 
 ## Project Overview
 
@@ -30,10 +30,12 @@ configuration and tooling.
 
 > **Note:**
 >
-> For all cloned repositories from this template, ensure that all occurrences of the project name are updated accordingly. This includes updating the `package-name` field in the `.release-please-config.json` file, as well as any other references to the project name throughout the codebase and documentation.
+> For all cloned repositories from this template, ensure that all occurrences of the project name are updated
+> accordingly. This includes updating the `package-name` field in the `.release-please-config.json` file, as well as any
+> other references to the project name throughout the codebase and documentation.
 >
-> This step is crucial to ensure that the release process, versioning, and other project-specific configurations are correctly aligned with the new project's name.
-
+> This step is crucial to ensure that the release process, versioning, and other project-specific configurations are
+> correctly aligned with the new project's name.
 
 ### Getting Started with Template [Ignore if you are working on a project that already uses this template]
 
@@ -230,6 +232,36 @@ This project uses Release Please to automate the process of generating changelog
 If this template is being cloned for a new project, make sure to update the `package-name` field in
 the `.release-please-config.json` file to the new project's name. This ensures that the release process and versioning
 are correctly aligned with the new project.
+
+## Security
+
+This project uses Snyk to find and fix vulnerabilities. Snyk helps maintain a secure codebase by continuously monitoring
+for vulnerabilities in dependencies and providing automated fixes.
+
+### Using Snyk
+
+- **Test for vulnerabilities:**
+  ```bash
+  npx snyk test
+    ```
+- **Fix vulnerabilities:**
+    ```
+    npx snyk wizard
+    ```
+  ### Continuous Integration
+
+Snyk is integrated with GitHub Actions to automatically test for vulnerabilities on every push and pull request to
+the `main` branch. The results can be viewed in the Actions tab of the repository.
+
+### Important Notes
+
+- **SNYK_TOKEN:** Ensure that the `SNYK_TOKEN` is set in the repository's secrets to enable Snyk integration in GitHub
+  Actions.
+- **Automated Security Checks:** The security scan runs automatically on every push to the `main` branch and on every
+  pull request, helping to maintain the security of the codebase.
+
+By using these commands, you can ensure your project remains secure and up-to-date with the latest vulnerability
+patches.
 
 ## Learn More
 
