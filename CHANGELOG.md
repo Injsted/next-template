@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/InjstedInc/next-template/compare/v1.0.0...v1.0.1) (2024-07-17)
+
+
+### Bug Fixes
+
+* adding node 22 and pnpm ([7c49f96](https://github.com/InjstedInc/next-template/commit/7c49f96f20561e067d258e64b880f4f985dc92bc))
+* adding node 22 to circleci ([773f0e3](https://github.com/InjstedInc/next-template/commit/773f0e3f519968ca8516c7bfbd7d0c3bde1b4e24))
+* adding node 22 to circleci ([9f6db22](https://github.com/InjstedInc/next-template/commit/9f6db22b1df4d2395587d382bb445c3e42cae762))
+* fixing gh action badge ([9c58d21](https://github.com/InjstedInc/next-template/commit/9c58d2148847818a913de0908d6220a02f7628cf))
+
 ## 1.0.0 (2024-07-17)
 
 
