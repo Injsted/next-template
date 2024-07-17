@@ -41,4 +41,4 @@ jobs:
           body: ${{ steps.release.outputs.body }}
           draft: false
           prerelease: false
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACTIONS_TOKEN }}
